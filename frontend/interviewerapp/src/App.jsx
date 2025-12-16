@@ -11,7 +11,7 @@ import InterviewResults from "./Pages/InterviewerApp/InterviewResults";
 import QuizPage from "./Pages/InterviewerApp/QuizPage";
 
 /* AI Interview App Components */
-import TopicSelector from "./components/TopicSelector";
+import TopicSelector from "./components/topicSelector";
 import InterviewSession from "./components/InterviewSession";
 import ResultsDashboard from "./components/ResultsDashboard";
 
