@@ -6,7 +6,7 @@ import UserProvider from "./context/userContext";
 /* Pages */
 import LandingPage from "./Pages/InterviewerApp/LandingPage";
 import Dashboard from "./Pages/Home/Dashboard";
-import InterviewApp from "./Pages/InterviewerApp/interviewApp";
+import InterviewApp from "./Pages/InterviewerApp/InterviewApp";
 import InterviewResults from "./Pages/InterviewerApp/InterviewResults";
 import QuizPage from "./Pages/InterviewerApp/QuizPage";
 
