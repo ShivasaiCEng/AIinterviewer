@@ -7,7 +7,7 @@ import UserProvider from "./context/userContext";
 import LandingPage from "./Pages/InterviewerApp/LandingPage";
 import Dashboard from "./Pages/Home/Dashboard";
 import InterviewApp from "./Pages/InterviewerApp/interviewApp";
-import InterviewResults from "./Pages/InterviewerApp/interviewResults";
+import InterviewResults from "./Pages/InterviewerApp/InterviewResults";
 import QuizPage from "./Pages/InterviewerApp/QuizPage";
 
 /* AI Interview App Components */
