@@ -1,7 +1,8 @@
 // client/src/services/api.js
 import axios from "axios";
+import { BASE_URL, API_PATHS } from "../utils/apiPaths";
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000/api";
+const API_BASE_URL = BASE_URL || "http://localhost:8000";
 
 // create instance with 2 minute timeout (whisper + gpt can be slow)
 const instance = axios.create({
@@ -20,7 +21,7 @@ async function evaluateVoice({ audioBlob, questionId, questionText, correctAnswe
   if (browserTranscript) formData.append("browserTranscript", browserTranscript);
 
   try {
-    const resp = await instance.post("/voice/evaluate", formData, {
+    const resp = await instance.post(API_PATHS.AI.EVALUATE_ANSWER, formData, {
       headers: { "Content-Type": "multipart/form-data" },
     });
     return resp.data;
@@ -32,4 +33,3 @@ async function evaluateVoice({ audioBlob, questionId, questionText, correctAnswe
 }
 
 export default { evaluateVoice };
- 
