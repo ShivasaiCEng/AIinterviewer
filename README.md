@@ -1,111 +1,161 @@
 
-PrepAI is an AI-powered interview preparation web application designed to help users practice and improve their interview skills using live mock interview simulations and instant feedback. It integrates AI to simulate realistic interview scenarios, making the preparation process smarter, personalized, and effective.
+---
 
-**Demo video**: https://youtu.be/n6lIzUERQ_o
+#  PrepAI
 
-**Live Demo**: https://a-iinterviewer-one.vercel.app/
- 
-**GitHub**
+**PrepAI** is an AI-powered interview preparation web application designed to help users practice and improve their interview skills using  mock interview simulations and instant feedback. It integrates AI to simulate realistic interview experience, making the preparation process smarter, personalized, and effective. ([GitHub][1])
 
-**Features**
+---
 
-**AI-Driven Interview Practice**
-Simulates real interview scenarios using AI question generation. You can practice common questions tailored to roles and topics.
+##  Demo & Links
 
-**Instant Response Evaluation**
-Receive instant feedback (accuracy, confidence, suggestions) after answering each question to improve your performance.
+*  **Live Website:** [https://a-iinterviewer-one.vercel.app/](https://a-iinterviewer-one.vercel.app/)
+*  **Demo Video:** [https://youtu.be/n6lIzUERQ_o](https://youtu.be/n6lIzUERQ_o)
+*  **GitHub Repository:** [https://github.com/ShivasaiCEng/PrepAI](https://github.com/ShivasaiCEng/PrepAI) ([GitHub][1])
 
-**React + Vite Frontend**
-Built with React and Vite for fast development and excellent user experience.
+---
 
- **Live Demo & Video Showcase**
-A live working deployment and a demo walkthrough video are provided to show how the product works. 
-GitHub
+##  Overview
 
-**Tech Stack**
- React — UI
- Vite — Build tooling
- JavaScript / CSS / HTML — Core application
- AI service — OpenAI, Gemini
- Backend — MongoDB/Express/Node.js
+* AI-driven interview question generation
+* Real-time feedback and response evaluation
+* Designed to improve confidence and readiness
+* Built with modern frontend & backend stack ([GitHub][1])
 
-**Project Structure (Example)**
+---
+
+##  Project Structure
+
 ```
 PrepAI/
 │
-├── backend/                      # Backend (Node.js + Express)
-│   ├── config/                   # Database & app configuration
-│   ├── controllers/              # Request handling logic
-│   ├── middlewares/              # Custom middlewares (auth, error handling)
-│   ├── models/                   # Mongoose schemas / DB models
-│   ├── routes/                   # API route definitions
-│   ├── uploads/                  # Uploaded audio/files
-│   ├── utils/                    # Utility/helper functions
-│   ├── node_modules/             # Backend dependencies
-│   ├── .env                      # Environment variables
-│   ├── .gitignore                # Git ignore rules
-│   ├── package.json              # Backend dependencies & scripts
-│   ├── package-lock.json         # Dependency lock file
-│   └── server.js                 # Backend entry point
+├── backend/                          # Backend API (Node.js + Express)
+│   ├── config/                       # Database & environment configs
+│   ├── controllers/                  # Business logic & handlers
+│   ├── middlewares/                  # Middleware (auth, error handling)
+│   ├── models/                       # DB models & schemas
+│   ├── routes/                       # API route definitions
+│   ├── uploads/                      # Uploaded files (if any)
+│   ├── utils/                        # Helpers & utilities
+│   ├── .env                         # Backend environment variables
+│   ├── .gitignore
+│   ├── package.json                  # Backend dependencies & scripts
+│   └── server.js                     # Server entry file
 │
-├── frontend/
-│   └── interviewerapp/           # Frontend (React + Vite)
-│       ├── public/               # Static assets
-│       ├── src/                  # React source code
-│       ├── node_modules/         # Frontend dependencies
-│       ├── .gitignore            # Git ignore rules
-│       ├── eslint.config.js      # ESLint configuration
-│       ├── index.html            # HTML entry file
-│       ├── package.json          # Frontend dependencies & scripts
-│       ├── package-lock.json     # Dependency lock file
-│       ├── tailwind.config.js    # Tailwind CSS configuration
-│       ├── vite.config.js        # Vite configuration
-│       └── README.md             # Frontend-specific README
+├── frontend/                         # Frontend application (React + Vite)
+│   └── interviewerapp/
+│       ├── public/                   # Static assets
+│       ├── src/                      # React source code
+│       ├── .gitignore
+│       ├── eslint.config.js
+│       ├── index.html                # Root HTML
+│       ├── package.json              # Frontend dependencies & scripts
+│       ├── tailwind.config.js        # Tailwind CSS config
+│       └── vite.config.js            # Vite config
 │
-└── package-lock.json             # Root lock file (if applicable) 
- ```
+├── API_USAGE_REVIEW.md               # API usage documentation
+├── DEPLOYMENT.md                     # Deployment instructions
+├── README.md                        # This file
+└── package-lock.json                 # Lockfile
+```
 
+> This structure reflects the folders and files in your source repository. ([GitHub][1])
 
-You can update this to include actual folders you have in your project.
+---
 
-**Installation (Local Setup)**
+##  Prerequisites
 
-To run PrepAI on your machine:
+* Node.js (v18+ recommended)
+* npm or yarn
+* A code editor (VS Code, etc.)
 
-**Clone the repo**
+---
 
-git clone https://github.com/madugushivakumar/PrepAI.git
+##  Installation
+
+Clone the project:
+
+```bash
+git clone https://github.com/ShivasaiCEng/PrepAI.git
 cd PrepAI
+```
 
+Install dependencies:
 
-**Install dependencies**
-
+```bash
 npm install
+```
 
+Install frontend dependencies:
 
-**Run the development server**
+```bash
+cd frontend/interviewerapp
+npm install
+```
 
+---
+
+##  Running the Application
+
+### Start Development Server
+
+```bash
 npm run dev
+```
+
+This will run **both frontend and backend** (if configured) or use scripts in respective folders.
+
+If separate:
+
+#### Frontend
+
+```bash
+cd frontend/interviewerapp
+npm run dev
+```
+
+#### Backend
+
+```bash
+cd backend
+npm start
+```
+
+---
+
+##  Features
+
+*  **AI-Driven Interview Practice**
+  Simulates real interview scenarios using AI for dynamic question generation. ([GitHub][1])
+
+*  **Instant Feedback Evaluation**
+  Provides instant performance evaluation and suggestions. ([GitHub][1])
+
+*  **React + Vite Frontend**
+  Fast, responsive user experience. ([GitHub][1])
+
+* 🛠 **Backend API Support via Express**
+  Handles interview session data and analytics. ([GitHub][1])
+
+---
+
+## 🛠 Tech Stack
+
+**Frontend:** React, Vite, JavaScript, Tailwind CSS
+**Backend:** Node.js, Express, MongoDB (optionally)
+**AI:** OpenAI / Gemini (for question generation) ([GitHub][1])
+
+---
+
+##  Contribution
+
+Contributions are welcome! To contribute:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature-name`)
+3. Commit your changes (`git commit -m "feat: your message"`)
+4. Push (`git push origin feature-name`)
+5. Open a Pull Request
 
 
-**Build the app for production**
-
-npm run build
-
-**How It Helps Users**
-
-PrepAI provides a single platform where job seekers can practice interviews without juggling between multiple resources. It brings personalized question practice, performance feedback, and real-world readiness all in one place. 
-GitHub
-
-You can expand this section later with screenshots, features like resume checkers, analytics, interviewer voice mode, or mobile support depending on how your app evolves.
-
-**Contribution**
-
-Contributions are welcome!
-If you’d like to add features, fix bugs, or help improve documentation:
-
-Fork the repository
-
-Create a feature branch
-
-Submit a pull request
+[1]: https://github.com/ShivasaiCEng/PrepAI "GitHub - ShivasaiCEng/PrepAI: DEMO VIDEO : https://youtu.be/n6lIzUERQ_o"
